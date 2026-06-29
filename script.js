@@ -1,5 +1,5 @@
 // ── TYPING ANIMATION ──
-const words = ["Future Software Engineer","Python Developer","CSE Student","Web Developer","Problem Solver"];
+const words = ["Future Engineer","CSE Student","Project maker","Operating system maintain"];
 let i=0,j=0,isDeleting=false;
 function type(){
     const current=words[i];
