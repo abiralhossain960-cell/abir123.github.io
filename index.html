@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD. ABIR AL HOSSAIN</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Mouse glow follower -->
+    <div class="mouse-glow" id="mouseGlow"></div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+
+    <!-- Particle canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <h2 class="logo">ABIR</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="left fade-in">
+            <p class="greeting">Hello, I'm</p>
+            <h1 class="gradient-text">MD. ABIR AL HOSSAIN</h1>
+            <h2 class="subtitle">Computer Science &amp; Engineering Student</h2>
+            <span id="typing"></span><span class="cursor">|</span>
+
+            <div class="btn">
+                <a href="#" class="btn-primary">View Portfolio</a>
+                <a href="#" class="btn-outline">Download CV</a>
+            </div>
+
+            <div class="social">
+                <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="right fade-in-delay">
+            <div class="circle"></div>
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <img src="profile.png" alt="Abir Al Hossain" class="profile-img">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="section-header">
+            <span class="section-tag">Get to know me</span>
+            <h2 class="section-title">About <span class="accent">Me</span></h2>
+        </div>
+        <div class="about-content">
+            <div class="about-card glass-card">
+                <i class="fas fa-user-graduate about-icon"></i>
+                <h3>Student</h3>
+                <p>Pursuing BSc in Computer Science & Engineering with a passion for technology and innovation.</p>
+            </div>
+            <div class="about-card glass-card">
+                <i class="fas fa-code about-icon"></i>
+                <h3>Developer</h3>
+                <p>Building web applications and solving real-world problems through code.</p>
+            </div>
+            <div class="about-card glass-card">
+                <i class="fas fa-lightbulb about-icon"></i>
+                <h3>Problem Solver</h3>
+                <p>Passionate about algorithms, logic, and creating efficient solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education section" id="education">
+        <div class="section-header">
+            <span class="section-tag">My journey</span>
+            <h2 class="section-title">Education</h2>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item glass-card">
+                <div class="timeline-dot"></div>
+                <div class="timeline-year">2022 – Present</div>
+                <h3>BSc in Computer Science &amp; Engineering</h3>
+                <p class="institution"><i class="fas fa-university"></i> Your University Name</p>
+                <p class="edu-detail">CGPA: 3.75 / 4.00</p>
+            </div>
+            <div class="timeline-item glass-card">
+                <div class="timeline-dot"></div>
+                <div class="timeline-year">2019 – 2021</div>
+                <h3>Higher Secondary Certificate (HSC)</h3>
+                <p class="institution"><i class="fas fa-school"></i> Your College Name</p>
+                <p class="edu-detail">GPA: 5.00 / 5.00 · Science</p>
+            </div>
+            <div class="timeline-item glass-card">
+                <div class="timeline-dot"></div>
+                <div class="timeline-year">2017 – 2019</div>
+                <h3>Secondary School Certificate (SSC)</h3>
+                <p class="institution"><i class="fas fa-school"></i> Your School Name</p>
+                <p class="edu-detail">GPA: 5.00 / 5.00 · Science</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section section" id="gallery">
+        <div class="section-header">
+            <span class="section-tag">Moments</span>
+            <h2 class="section-title">Gallery</h2>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item glass-card">
+                <img src="photos/pic1.jpg" alt="Graduation" onerror="this.parentElement.classList.add('placeholder')">
+                <div class="gallery-overlay"><span>Graduation</span></div>
+            </div>
+            <div class="gallery-item glass-card">
+                <img src="photos/pic2.jpg" alt="Campus Life" onerror="this.parentElement.classList.add('placeholder')">
+                <div class="gallery-overlay"><span>Campus Life</span></div>
+            </div>
+            <div class="gallery-item glass-card">
+                <img src="photos/pic3.jpg" alt="Research" onerror="this.parentElement.classList.add('placeholder')">
+                <div class="gallery-overlay"><span>Research</span></div>
+            </div>
+            <div class="gallery-item glass-card">
+                <img src="photos/pic4.jpg" alt="Achievement" onerror="this.parentElement.classList.add('placeholder')">
+                <div class="gallery-overlay"><span>Achievement</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="section-header">
+            <span class="section-tag">Get in touch</span>
+            <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+        </div>
+        <div class="contact-cards">
+            <a href="mailto:your@email.com" class="contact-card glass-card">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+                <p>your@email.com</p>
+            </a>
+            <a href="#" class="contact-card glass-card">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+                <p>linkedin.com/in/abir</p>
+            </a>
+            <a href="#" class="contact-card glass-card">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+                <p>github.com/abir</p>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© <span id="year"></span> MD. Abir Al Hossain · Built with passion</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
