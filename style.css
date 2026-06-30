@@ -47,7 +47,22 @@ nav{
     transition:background 0.3s;
 }
 nav.scrolled{background:rgba(9,9,9,0.92);}
-.logo{color:var(--cyan);font-size:28px;font-weight:700;letter-spacing:2px;}
+.logo-link{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.logo-img:hover{
+    transform: scale(1.08);
+}
 nav ul{display:flex;list-style:none;gap:36px;}
 nav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500;
     transition:color 0.3s;position:relative;}
