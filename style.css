@@ -278,4 +278,48 @@ footer{
 @media(max-width:480px){
     .gradient-text{font-size:30px;}
     .section{padding:80px 6%;}
+    /* =======================
+   DARK / LIGHT MODE
+======================= */
+
+#theme-toggle{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:20px;
+    background:rgba(255,255,255,.12);
+    color:#fff;
+    transition:.3s;
+    margin-left:20px;
+}
+
+#theme-toggle:hover{
+    transform:scale(1.1);
+}
+
+/* Light Theme */
+
+body.light-mode{
+    --bg:#f5f5f5;
+    --bg2:#ffffff;
+    --text:#111;
+    --muted:#555;
+    --glass:rgba(255,255,255,.8);
+    --glass-border:#d8d8d8;
+}
+
+body.light-mode nav{
+    background:rgba(255,255,255,.9);
+}
+
+body.light-mode footer{
+    border-top:1px solid #ddd;
+}
+
+body.light-mode #theme-toggle{
+    background:#ddd;
+    color:#111;
+}
 }
