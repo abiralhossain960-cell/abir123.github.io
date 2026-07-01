@@ -132,6 +132,29 @@ if(ham){
         navUl.style.border="1px solid rgba(0,224,255,0.15)";
         navUl.style.backdropFilter="blur(20px)";
     });
+    // ===== DARK / LIGHT MODE =====
+
+const themeBtn = document.getElementById("theme-toggle");
+
+themeBtn.addEventListener("click", () => {
+
+    document.body.classList.toggle("light-mode");
+
+    if(document.body.classList.contains("light-mode")){
+        themeBtn.innerHTML = '<i class="fas fa-sun"></i>';
+        localStorage.setItem("theme","light");
+    }else{
+        themeBtn.innerHTML = '<i class="fas fa-moon"></i>';
+        localStorage.setItem("theme","dark");
+    }
+
+});
+
+// Page refresh হলেও আগের mode থাকবে
+if(localStorage.getItem("theme") === "light"){
+    document.body.classList.add("light-mode");
+    themeBtn.innerHTML = '<i class="fas fa-sun"></i>';
+}
     document.querySelectorAll("nav a").forEach(a=>{
         a.addEventListener("click",()=>{
             if(window.innerWidth<=900) navUl.style.display="none";
